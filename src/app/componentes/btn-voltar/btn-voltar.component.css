@@ -1,0 +1,8 @@
+button{
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    cursor: pointer;
+}

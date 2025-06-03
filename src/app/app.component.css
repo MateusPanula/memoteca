@@ -1,0 +1,11 @@
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url(/assets/imagens/background-completo.png);
+  background-size: cover;
+}
+
+app-rodape {
+  margin-top: auto;
+}

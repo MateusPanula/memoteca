@@ -1,0 +1,19 @@
+<h2>{{ textoTitulo }}</h2>
+<form (ngSubmit)="enviarDados()" class="form">
+    <p class="alerta"></p>
+    <label for="nome">Nome do Filme ou Série</label>
+    <input type="text" placeholder="Digite o Nome do Filme ou Série" [(ngModel)]="nome" name="nome" required>
+    <label for="data">Data que assistiu</label>
+    <input type="date" [(ngModel)]="data" name="data">
+    <label for="descricao">Descrição do Filme ou Série</label>
+    <textarea placeholder="Digite a Descrição do Filme ou Série" [(ngModel)]="descricao" name="descricao" required></textarea>
+    <label for="imagem">Escolha uma imagem do filme ou série</label>
+    <input type="file" id="imagem" (change)="alterarImagem()" accept="image/*" />
+
+    <img *ngIf="imagem" [src]="imagem " alt="Imagem da memória" />
+
+    <button type="submit">{{ textoBotao }}</button>
+    <button type="button" *ngIf="paginaAtual !== '/Cadastrar'" (click)="excluirMemoria()" class="btnExcluir">Excluir</button>
+
+    <input type="text" [(ngModel)]="id" name="id" id="inputId">
+</form>

@@ -1,0 +1,22 @@
+h2 {
+    margin-top: 35px;
+    font-family: Arial;
+}
+
+div {
+    width: 45%;
+    background-color: #195396;
+    border-radius: 18px;
+    margin: 20px auto auto auto;
+    padding: 30px;
+    text-align: justify;
+
+    & p {
+        font-family: 'Inter', sans-serif;
+        color: white;
+    }
+}
+
+:host {
+    margin: auto;
+}

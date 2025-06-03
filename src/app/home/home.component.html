@@ -1,0 +1,9 @@
+<h2>Filmes e Séries</h2>
+<input type="text" placeholder="Pesquisar" [(ngModel)]="pesquisa" (input)="filtrarMemorias()">
+<div class="container">
+  <app-card *ngFor="let item of memoriasFiltradas" 
+            [nome]="item.memoria.nome" 
+            [imagemBase64]="item.memoria.imagemBase64"
+            [id]="item.id">
+  </app-card>
+</div>

@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 30px auto;
+    max-width: 1280px;
+    min-height: 61vh;
+    width: auto;
+}
+
+h2 {
+    font-family: Arial;
+    margin: 3% 0 3% 0;
+}
+
+input {
+    display: block;
+    height: 30px;
+    width: 300px;
+    border-radius: 8px;
+    border: 3px solid #1a559a;
+    margin: 0 auto 0 auto;
+    padding-left: 10px;
+}
